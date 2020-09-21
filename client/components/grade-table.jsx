@@ -4,7 +4,7 @@ import Grade from './grade';
 const GradeTable = props => {
   const listGrades = props.grades;
   const gradeRows = listGrades.map(grade => {
-    return <tr key={grade.id}><Grade grade={grade.grade} name={grade.name} course={grade.course} /></tr>;
+    return <Grade key={grade.id} grade={grade.grade} name={grade.name} course={grade.course} />;
   });
 
   return (
