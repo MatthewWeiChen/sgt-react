@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from './header';
-// import Grades from './grades';
 import GradeTable from './grade-table';
 
 class App extends React.Component {
@@ -23,7 +22,7 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        <GradeTable />
+        <GradeTable grades={this.state.grades} />
       </>
     );
   }
