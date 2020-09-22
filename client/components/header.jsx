@@ -1,8 +1,16 @@
 import React from 'react';
 
-function Header() {
+function Header(props) {
+  const average = props.average();
   return (
-    <h1>Student Grade Table</h1>
+    <div className="header-container">
+      <h1>Student Grade Table</h1>
+      <h3 className="ml-auto">Average Grade
+        <span className="badge badge-secondary ml-3">
+          {String(average)}
+        </span>
+      </h3>
+    </div>
   );
 }
 
