@@ -1,46 +1,34 @@
 {
   "grades": [
     {
-      "id": 5,
-      "name": "Kyle Simpson",
-      "course": "JavaScript",
-      "grade": 100
-    },
-    {
-      "id": 12,
-      "name": "Brendan Eich",
-      "course": "JavaScript",
-      "grade": 100
-    },
-    {
-      "id": 32,
-      "name": "Douglas Crockford",
-      "course": "JavaScript",
-      "grade": 100
-    },
-    {
-      "name": "Matt Chen",
+      "name": "Matthew",
       "course": "Web Development",
       "grade": 100,
-      "id": 33
+      "id": 1
     },
     {
-      "name": "Michael Lee",
+      "name": "Matthew",
       "course": "Web Development",
-      "grade": "90",
-      "id": 34
+      "grade": 100,
+      "id": 2
     },
     {
-      "name": "Katherine Mcjagger",
-      "course": "HTML",
-      "grade": "100",
-      "id": 35
+      "name": "Matthew",
+      "course": "Web Development",
+      "grade": 100,
+      "id": 3
     },
     {
-      "name": "Kevin Lee",
-      "course": "JavaScript",
-      "grade": 95,
-      "id": 36
+      "name": "Matthew",
+      "course": "Web Development",
+      "grade": 100,
+      "id": 4
+    },
+    {
+      "name": "Matthew",
+      "course": "Web Development",
+      "grade": 50,
+      "id": 5
     }
   ]
 }

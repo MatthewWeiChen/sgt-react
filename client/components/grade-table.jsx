@@ -4,7 +4,10 @@ import Grade from './grade';
 const GradeTable = props => {
   const listGrades = props.grades;
   const gradeRows = listGrades.map(grade => {
-    return <Grade key={grade.id} grade={grade.grade} name={grade.name} course={grade.course} />;
+    return <Grade
+      delete={props.delete}
+      key={grade.id}
+      grade={grade} />;
   });
 
   return (
@@ -14,6 +17,7 @@ const GradeTable = props => {
           <th scope="col">Student Name</th>
           <th scope="col">Course</th>
           <th scope="col">Grade</th>
+          <th scope="col">Operations</th>
         </tr>
       </thead>
       <tbody>
