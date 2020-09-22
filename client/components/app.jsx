@@ -45,13 +45,14 @@ class App extends React.Component {
   render() {
     const averageGrade = this.getAverageGrade();
     return (
-      <>
+      <div className="ml-4 mr-2">
         <Header average={averageGrade} />
-        <div className="table-container">
+        <div className="row">
           <GradeTable grades={this.state.grades} />
           <GradeForm onSubmit={this.addGrade} />
+
         </div>
-      </>
+      </div>
     );
   }
 }
