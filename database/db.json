@@ -23,6 +23,24 @@
       "course": "Web Development",
       "grade": 100,
       "id": 33
+    },
+    {
+      "name": "Michael Lee",
+      "course": "Web Development",
+      "grade": "90",
+      "id": 34
+    },
+    {
+      "name": "Katherine Mcjagger",
+      "course": "HTML",
+      "grade": "100",
+      "id": 35
+    },
+    {
+      "name": "Kevin Lee",
+      "course": "JavaScript",
+      "grade": 95,
+      "id": 36
     }
   ]
 }

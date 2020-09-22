@@ -5,3 +5,7 @@
 .table-container{
   display:flex;
 }
+
+.number-field{
+  width: 255px;
+}

@@ -10,6 +10,7 @@ class App extends React.Component {
       grades: []
     };
     this.getAverageGrade = this.getAverageGrade.bind(this);
+    this.addGrade = this.addGrade.bind(this);
   }
 
   componentDidMount() {
@@ -25,8 +26,8 @@ class App extends React.Component {
     const listOfGrades = listOfStudents.map(student => {
       return student.grade;
     });
-    const averageGrade = listOfGrades.reduce((sum, currentValue) => sum + currentValue, 0) / listOfGrades.length;
-    const averageGradeRounded = Math.round(averageGrade);
+    const averageGrade = listOfGrades.reduce((sum, currentValue) => sum + currentValue, 0);
+    const averageGradeRounded = Math.round(averageGrade / listOfGrades.length);
     return averageGradeRounded;
   }
 
@@ -37,7 +38,8 @@ class App extends React.Component {
       body: JSON.stringify(newGrade)
     };
     fetch('/api/grades', init)
-      .then(res => res.json());
+      .then(res => res.json())
+      .then(grade => this.setState({ grades: this.state.grades.concat(grade) }));
   }
 
   render() {
@@ -47,7 +49,7 @@ class App extends React.Component {
         <Header average={averageGrade} />
         <div className="table-container">
           <GradeTable grades={this.state.grades} />
-          <GradeForm />
+          <GradeForm onSubmit={this.addGrade} />
         </div>
       </>
     );
