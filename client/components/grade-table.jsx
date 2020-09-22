@@ -8,7 +8,7 @@ const GradeTable = props => {
   });
 
   return (
-    <table className="table table-striped" >
+    <table className="table table-striped col-7" >
       <thead className="thead-dark">
         <tr>
           <th scope="col">Student Name</th>
